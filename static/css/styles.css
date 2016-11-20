@@ -4,7 +4,7 @@
 /* General stuff. */
 
 body {
-    width: 800px;
+    width: 900px;
 }
 
 html { /* This stuff is for the sticky footer. */
@@ -40,9 +40,9 @@ body {
 }
 
 .sitetitle {
-    font-family: 'Merriweather';
-    font-weight: 300;
-    font-size: 4em;
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+    font-size: 2em;
     padding-left: 10px; /* Hack to dodge :hover issue. */
     position: relative; /* Hack to dodge :hover issue. */
     left: -10px; /* Hack to dodge :hover issue. */
@@ -65,6 +65,7 @@ body {
 
 .menu li {
     display: inline;
+    text-transform: lowercase;
     margin-right: 10px;
 }
 

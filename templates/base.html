@@ -25,8 +25,8 @@
       <!-- site image -->
       {% if PROFILE_IMAGE_URL %}
         <div class= "siteimage">
-          <a class="nodec" href={{ PROFILE_IMAGE_URL }}>
-            <img width="200" height="200" src={{ PROFILE_IMAGE_URL }}>
+          <a class="nodec" href="{{ SITEURL }}{{ PROFILE_IMAGE_URL }}">
+            <img width="200" height="150" src="{{ SITEURL }}{{ PROFILE_IMAGE_URL }}">
           </a>
         </div>
       {% endif %}
@@ -38,8 +38,8 @@
         <nav class="menu">
           <ul>
             <!-- menu items-->
-            {% for title, link in MENUITEMS %}
-              <li><a class="nodec" href="{{ link }}">{{ title }}</a></li>
+            {% for title, link in MENUITEMS|sort(attribute='sortorder') %}
+              <li><a class="nodec" href="{{ SITEURL }}/{{ link }}">{{ title }}</a></li>
             {% endfor %}
             <!--pages-->
             {% if DISPLAY_PAGES_ON_MENU %}

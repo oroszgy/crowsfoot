@@ -21,13 +21,15 @@
           {% if article.author and SHOW_ARTICLE_AUTHOR %}
           <address class="vcard author">By <a "nodec" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></address>
           {% endif %}
-        </div><!-- /.postinfo -->
+        </div><
 
         <div class="postsummary"> {{ article.summary }} </div>
     </li>
     {% endfor %}
 
-  </ol><!-- /#post-list -->
+
+</ol>
+  <!-- /#post-list -->
 
   {% include 'pagination.html' %}
 
